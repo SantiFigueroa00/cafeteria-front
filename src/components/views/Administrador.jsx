@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { Button, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { consultarAPI } from "../helpers/queries";
 import ItemProducto from "./admiProductos/ItemProducto";
+import { Link} from "react-router-dom"
+import { useForm } from 'react-hook-form'
 
 const Administrador = () => {
   
@@ -26,9 +28,9 @@ const Administrador = () => {
     <section className="container mainSection">
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4 ">Productos disponibles</h1>
-        <Button to="/administrar/crear" className="btn btn-primary">
+        <Link to="/administrar/crear" className="btn btn-primary">
           Agregar
-        </Button>
+        </Link>
       </div>
       <hr />
       <Table responsive striped bordered hover>
@@ -44,7 +46,11 @@ const Administrador = () => {
         </thead>
         <tbody>
           {/* aqui tengo que hacer un map */}
-          <ItemProducto></ItemProducto>
+          {
+            // productos.map((producto)=><ItemProducto key={producto.id} producto={producto} ></ItemProducto>)
+             productos.map((producto)=><ItemProducto key={producto.id} {...producto} ></ItemProducto>)
+          }
+
         </tbody>
       </Table>
     </section>
