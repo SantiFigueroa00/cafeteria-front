@@ -3,7 +3,7 @@ import ItemProducto from "./admiProductos/ItemProducto";
 
 const Administrador = () => {
   return (
-    <section className="container">
+    <section className="container mainSection">
       <div className="d-flex justify-content-between align-items-center mt-5">
         <h1 className="display-4 ">Productos disponibles</h1>
         <Button to="/administrar/crear" className="btn btn-primary">

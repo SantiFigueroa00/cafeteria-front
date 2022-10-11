@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./app.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Inicio from "./components/views/Inicio";
 import Administrador from "./components/views/Administrador";
