@@ -1,11 +1,11 @@
-import { Navbar, Nav, Container, NavLink } from "react-bootstrap";
-
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     <Navbar bg="danger" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand to="/">
-          Cafeteria
+        <Navbar.Brand as={Link} to="/">
+          Miles
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
