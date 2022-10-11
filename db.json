@@ -1,0 +1,25 @@
+{
+    "productos":[
+        {
+            "nombreProducto":"cafe",
+            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "precio":300,
+            "categoria":"bebida-caliente",
+            "id":1
+        },
+        {
+            "nombreProducto":"brownie",
+            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "precio":250,
+            "categoria":"dulce",
+            "id":2
+        },
+        {
+            "nombreProducto":"licuado",
+            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "precio":400,
+            "categoria":"bebida-fria",
+            "id":3
+        }
+    ]
+}
