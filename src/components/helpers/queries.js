@@ -10,3 +10,18 @@ export const consultarAPI = async () => {
         return false;
     }
 };
+export const crearProductoAPI = async (producto) => { 
+    try {
+        // peticion Get para obtener listado
+        const respuesta = await fetch(URL,{
+            method: 'POST',
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify(producto)
+        });
+        return respuesta;
+    } catch (error) {
+        return false;
+    }
+};

@@ -1,25 +1,46 @@
 {
-    "productos":[
-        {
-            "nombreProducto":"cafe",
-            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "precio":300,
-            "categoria":"bebida-caliente",
-            "id":1
-        },
-        {
-            "nombreProducto":"brownie",
-            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "precio":250,
-            "categoria":"dulce",
-            "id":2
-        },
-        {
-            "nombreProducto":"licuado",
-            "imagen":"https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "precio":400,
-            "categoria":"bebida-fria",
-            "id":3
-        }
-    ]
+  "productos": [
+    {
+      "nombreProducto": "cafe",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 300,
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "brownie",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 250,
+      "categoria": "dulce",
+      "id": 2
+    },
+    {
+      "nombreProducto": "licuado",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 400,
+      "categoria": "bebida-fria",
+      "id": 3
+    },
+    {
+      "nombreProducto": "cafe expreso",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 400,
+      "categoria": "bebida-caliente",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Medialuna",
+      "precio": "20",
+      "imagen": "https://media.istockphoto.com/photos/argentine-croissants-medialunas-de-manteca-over-silicon-pastry-mat-picture-id1233225864?b=1&k=20&m=1233225864&s=612x612&w=0&h=oReQMNyk7n5Sp-0Zg_VWDwnOoDM1GPC2d0dVEzikEJA=",
+      "categoria": "dulce",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Milk Shake",
+      "precio": "200",
+      "imagen": "https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "bebida-fria",
+      "id": 6
+    }
+  ]
 }

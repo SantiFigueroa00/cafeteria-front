@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 import { consultarAPI } from "../helpers/queries";
 import ItemProducto from "./admiProductos/ItemProducto";
 import { Link} from "react-router-dom"
-import { useForm } from 'react-hook-form'
 
 const Administrador = () => {
   
