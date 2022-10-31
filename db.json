@@ -20,6 +20,20 @@
       "precio": 400,
       "categoria": "bebida-caliente",
       "id": 4
+    },
+    {
+      "nombreProducto": "cafe expreso",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 400,
+      "categoria": "bebida-caliente",
+      "id": 5
+    },
+    {
+      "nombreProducto": "cafe expreso",
+      "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "precio": 400,
+      "categoria": "bebida-caliente",
+      "id": 6
     }
   ]
 }

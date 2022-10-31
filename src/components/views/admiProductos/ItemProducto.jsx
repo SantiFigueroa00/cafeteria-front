@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { borrarProductoAPI, consultarAPI } from "../../helpers/queries";
 
-const ItemProducto = ({id, nombreProducto, categoria,imagen,precio,setProductos}) => {
+const ItemProducto = ({_id, nombreProducto, categoria,imagen,precio,setProductos}) => {
 // const ItemProducto = ({producto}) => {
-// const { id, nombreProducto, categoria,imagen,precio}={...producto}
+// const { _id, nombreProducto, categoria,imagen,precio}={...producto}
 const borrarProducto=()=>{
 
-  borrarProductoAPI(id).then((respuesta)=>{
+  borrarProductoAPI(_id).then((respuesta)=>{
     // TAREA AGREGAR PREGUNTA SI QUIERE BORRAR O NO
     if(respuesta.status ===200){
       Swal.fire('Producto eliminado','El producto fue eliminado correctamente','success');
@@ -30,14 +30,14 @@ const borrarProducto=()=>{
 
   return (
     <tr>
-      <td>{id}</td>
+      <td>{_id}</td>
       {/* <td>{props.producto.nombreProducto}</td> */}
       <td>{nombreProducto}</td>
       <td>${precio}</td>
       <td>{imagen}</td>
       <td>{categoria}</td>
       <td>
-        <Link className="btn btn-warning" to={`/administrar/editar/${id}`}>
+        <Link className="btn btn-warning" to={`/administrar/editar/${_id}`}>
           Editar
         </Link>
         <Button variant="danger" onClick={borrarProducto}>
