@@ -2,8 +2,8 @@
   "productos": [
     {
       "nombreProducto": "brownie",
+      "precio": "20",
       "imagen": "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "precio": 250,
       "categoria": "dulce",
       "id": 2
     },

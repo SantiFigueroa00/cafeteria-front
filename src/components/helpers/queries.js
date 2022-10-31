@@ -50,3 +50,19 @@ export const obtenerProductoAPI = async (id) => {
         return false;
     }
 };
+
+export const editarProductoAPI = async (id,producto) => { 
+    try {
+        // peticion Get para obtener listado
+        const respuesta = await fetch(URL+`/${id}`,{
+            method: 'PUT',
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify(producto)
+        });
+        return respuesta;
+    } catch (error) {
+        return false;
+    }
+};

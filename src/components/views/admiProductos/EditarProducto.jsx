@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import context from "react-bootstrap/esm/AccordionContext";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
-import { obtenerProductoAPI } from "../../helpers/queries";
+import { editarProductoAPI, obtenerProductoAPI } from "../../helpers/queries";
 
 const EditarProducto = () => {
   const {
@@ -15,7 +15,7 @@ const EditarProducto = () => {
   } = useForm();
 
   const {id} = useParams();
-
+  const navegacion = useNavigate();
   
   useEffect(() => {
     obtenerProductoAPI(id).then((respuesta)=>{
@@ -39,8 +39,16 @@ const EditarProducto = () => {
     
     const onSubmit = (datos) => {
       console.log(datos)
+      editarProductoAPI(id,datos).then((respuesta)=>{
+        if(respuesta.status ===200){
+          Swal.fire('Producto editado','El producto fue editado correctamente','success')
+          navegacion('/administrar')
+        }else{
+          Swal.fire('Ocurrio un error','El producto no fue editado','error')
+        }
+      })
     };
-    
+
     return (
       <section className="container mainSection">
       <h1 className="display-4 mt-5">Editar producto</h1>
